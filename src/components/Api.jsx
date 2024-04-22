@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// import { useNavigate } from "react-router-dom";
-
-
 const Api = () => {
   const [sciFiItems, setSciFiItems] = useState([]);
-  // const navigate = useNavigate();
-  //  const handleRoute=()=>{
-  //   navigate('/next');
-  //  }
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,7 +15,7 @@ const Api = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures this effect runs once on component mount
+  }, []); 
 
   return (
     <div className=" p-4 ">
